@@ -2,7 +2,7 @@
 # terraform {
 #   backend "s3" {
 #     bucket = "terraform-remote-state-camezii"
-#     key    = "dev/iam/terraform.tfstate"
+#     key    = "prod/terraform.tfstate"
 #     region         = "ap-northeast-2"
 #     dynamodb_table = "TerraformStateLock"
 #     encrypt        = true
