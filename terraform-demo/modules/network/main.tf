@@ -17,6 +17,8 @@ resource "aws_subnet" "public_subnet" {
   vpc_id = aws_vpc.demo_vpc.id
   availability_zone = "${element(var.azs, count.index)}"
   cidr_block = "${cidrsubnet(var.vpc_cidr, 8, count.index+1)}"
+  map_public_ip_on_launch = true
+  
   tags = { 
     Name = "${var.env}-${var.tag}-pub-subnet${count.index+1}"
   }
@@ -28,6 +30,7 @@ resource "aws_subnet" "private_subnet" {
   vpc_id = aws_vpc.demo_vpc.id
   availability_zone = "${element(var.azs, count.index)}"
   cidr_block = "${cidrsubnet(var.vpc_cidr, 8, count.index+11)}"
+  
   tags = { 
     Name = "${var.env}-${var.tag}-pri-subnet${count.index+1}"
   }
