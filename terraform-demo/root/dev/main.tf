@@ -10,10 +10,10 @@
 # }
 
 module "network" {
-  source        = "../../modules/network"
-  env           = var.env
-  tag           = var.tags
-  vpc_cidr      = var.vpc_cidr_block
-  azs           = var.az
+  source   = "../../modules/network"
+  env      = var.env
+  tag      = var.tags
+  vpc_cidr = var.vpc_cidr_block
+  azs      = var.az
 }
 
