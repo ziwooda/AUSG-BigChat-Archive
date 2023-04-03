@@ -17,3 +17,16 @@ module "network" {
   azs      = var.az
 }
 
+module "ec2" {
+  source        = "../../modules/ec2"
+  env           = var.env
+  tag           = var.tags
+  az_tags       = var.az_tag
+  instance_type = var.instance_type
+  ebs_size      = var.size
+  ebs_type      = var.type
+
+  azs            = module.network.availability_zones
+  public_subnet  = module.network.public_subnet_id
+  private_subnet = module.network.private_subnet_id
+}
