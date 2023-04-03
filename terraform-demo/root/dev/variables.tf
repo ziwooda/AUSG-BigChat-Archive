@@ -17,3 +17,24 @@ variable "az" {
   type        = list(string)
   description = "availability zone to deploy instances"
 }
+
+variable "az_tag" {
+  type        = list(string)
+  description = "availability zone to deploy instances"
+}
+
+variable "instance_type" {
+  type        = string
+  description = "intance type of ec2 instances"
+}
+
+variable "type" {
+  type        = string
+  description = "type of ebs volume"
+}
+
+variable "size" {
+  type        = string
+  description = "size of ebs volume"
+}
+
