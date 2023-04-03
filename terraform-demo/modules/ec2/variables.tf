@@ -1,0 +1,9 @@
+variable "env" {}
+variable "tag" {}
+variable "az_tags" {}
+variable "azs" {}
+variable "instance_type" {}
+variable "ebs_size" {}
+variable "ebs_type" {}
+variable "public_subnet" {}
+variable "private_subnet" {}
