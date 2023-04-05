@@ -31,7 +31,7 @@ Terraform을 처음 다뤄보면서 보다 효율적인 자동화를 구현하�
 > network module : vpc, subnet, igw, NAT gateway, EIP, route table  
 > ec2 module : key(data source), bastion host, private ec2 instances
 
-<img alt="module tree structure" src="https://user-images.githubusercontent.com/70079416/230025387-f166db5f-0c01-4138-80f9-86c619376e02.png" width=30% height=30%>
+<img alt="module tree structure" src="https://user-images.githubusercontent.com/70079416/230025387-f166db5f-0c01-4138-80f9-86c619376e02.png" width=50% height=50%>
 
 <br>
 
@@ -42,7 +42,7 @@ Terraform을 처음 다뤄보면서 보다 효율적인 자동화를 구현하�
 - 리소스 모듈은 재사용하고, `dev.tfvars`와 `prod.tfvars` 파일에 변수값을 달리 지정해주면 됩니다.
 - ec2 인스턴스를 생성하기 위한 key는 콘솔상에 생성되어 있는 key를 data block으로 가져왔어요.
 
-<img alt="architecture" src="https://user-images.githubusercontent.com/70079416/230025362-e9480b2a-48ed-4cba-ab26-652ddf98a267.png" width=60% height=60%>
+<img alt="architecture" src="https://user-images.githubusercontent.com/70079416/230025362-e9480b2a-48ed-4cba-ab26-652ddf98a267.png" width=80% height=80%>
 
 <br>
 
