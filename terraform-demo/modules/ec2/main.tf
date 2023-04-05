@@ -1,5 +1,5 @@
 #######################################
-# console에 생성되어 있는 key pair 불러오기
+# need to modify `key_name`
 data "aws_key_pair" "demo_public" {
   key_name = "demo-public-key"
 }
