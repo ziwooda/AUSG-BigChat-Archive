@@ -52,8 +52,11 @@ Terraform을 처음 다뤄보면서 보다 효율적인 자동화를 구현하�
 
 - terraform의 경로를 확인하고 tf로 커맨드를 단축시킬 수 있어요.
   ```bash
+  # path
   which terraform
-  sudo ln /usr/local/bin/terraform /usr/local/bin/tf
+  
+  # inject path
+  sudo ln ${path}/terraform ${path}/tf
   ```
 - 그리고 콘솔에 ec2 인스턴스를 생성하기 위한 key pair가 생성되어 있어야 하고, `modules/ec2/main.tf` 파일에서 최상단의 key data block을 찾아 `key_name`을 변경해줍니다.
 
