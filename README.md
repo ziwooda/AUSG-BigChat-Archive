@@ -65,7 +65,7 @@ Before running, you should install aws cli(v2) and terraform using homebrew.
   ```
 - This demo calls key-pair resource using `data` block, which means key-pair is provisioned already on console.   
   So, if you want to run this demo,
-    1. just create you key-pair on console directly
+    1. just create your key-pair on console directly
     2. and modify `key_name` info at the very top of the `modules/ec2/main.tf` file.    
 
 <br>
