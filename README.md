@@ -60,8 +60,8 @@ Before running, you should install aws cli(v2) and terraform using homebrew.
   # path
   which terraform
   
-  # inject path
-  sudo ln ${path}/terraform ${path}/tf
+  # inject path, using '-s' option for symbolic link
+  sudo ln -s ${path}/terraform ${path}/tf
   ```
 - This demo calls key-pair resource using `data` block, which means key-pair is provisioned already on console.   
   So, if you want to run this demo,
